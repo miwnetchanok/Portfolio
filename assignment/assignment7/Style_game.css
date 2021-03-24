@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+fieldset{
+    margin-top: 70px;
+    margin-left :300px;
+    margin-right: 300px;
+    color:rgb(204, 168, 121);
+    border-radius: 18px;
+    font-size: 25px;
+}
+input{
+    color: maroon;
+    border-radius: 8px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+select{
+    border-radius: 8px;
+    height: 25px;
+    font-size: 16px;
+}
+select:focus{
+    outline: none;
+}
+button{
+    border-radius: 8px;
+    height: 25px;
+    font-size: 16px;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 1px 1px mediumvioletred;
+
+}
+button:active{
+    transform: translateY(1px);
+    box-shadow: 1px 1px 2px 0px mediumvioletred;
+
+}
+button:focus{
+    outline: none;
+}
+#game-container {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#game-layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 24px;
+    border: 3px solid white;
+}
+#clock{
+    color: cadetblue;
+}
+
+.square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+}
+
+.pink{
+    background-color: mediumvioletred;
+    box-shadow: 0px 0px 8px 2px rgb(97, 5, 63);
+}
+.blue{
+    background-color: teal;
+    box-shadow: 0px 0px 8px 2px rgb(7, 69, 80);
+}
+.yellow{
+    background-color: khaki;
+    box-shadow: 0px 0px 8px 2px rgb(73, 67, 10);
+}

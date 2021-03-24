@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.navbar {
+    top: 0;
+    z-index: 99;
+    background-color: wheat;
+    padding: 1% 7%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar h1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.navbar b {
+    color: grey;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    color: SaddleBrown;
+    border: 1px solid saddlebrown;
+    padding: 2%;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.navbar ul a:hover {
+    color: white;
+    background-color: saddlebrown;
+}
+
+.profile {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profile .name {
+    padding-top: 20%;
+}
+
+.name h1 {
+    font-size: 40px;
+    font-family: Lucida Handwriting;
+}
+
+.name h2 {
+    font-size: 100px;
+    color: grey;
+    font-family: fantasy;
+}
+
+.name .nickname {
+    background-color: saddlebrown;
+    padding: 5%;
+    color: rgb(255, 254, 254);
+    font-size: 15px;
+    text-align: center;
+}
+
+.profile img {
+    width: 50%;
+}
+
+.about {
+    background-color: rgb(245, 240, 240);
+    display: flex;
+}
+
+.about img {
+    margin: 10%;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: -50px -50px 20px rgb(83, 17, 17);
+}
+
+.about .detail {
+    width: 60%;
+    margin-top: 15%;
+}
+
+.about .detail h1 {
+    font-size: 70px;
+    font-family: fantasy;
+}
+
+.about blockquote {
+    font-size: 30px;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skill .headline {
+    width: 100%;
+    text-align: center;
+}
+
+.headline h1 {
+    margin-top: 4%;
+    font-size: 60px;
+    font-family: fantasy;
+    color: saddlebrown;
+}
+
+.skill .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    row-gap: 10%;
+}
+
+.skill .grid-container img {
+    width: 40%;
+}
+
+.assignment .headline {
+    width: 100%;
+    text-align: center;
+}
+
+.assignment .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    row-gap: 10%;
+}
+
+.assignment .grid a img{
+    transition: 0.6s;
+}
+
+.grid img {
+    width: 70%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: Lucida Handwriting;
+    padding: 4%;
+    text-align: center;
+}
+
+hr {
+    border: 5px solid saddlebrown;
+}
+
+.grid a img:hover {
+    cursor: pointer;
+    filter: brightness(0.55);
+}
+
+@media only screen and ( max-width: 1024px ) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding-top: 2%;
+        width: 60%;
+    }
+    .profile {
+        margin-top: 20%;
+    }
+    .name h1 {
+        font-size: 25px;
+    }
+    
+    .name h2 {
+        font-size: 85px;
+    }
+    
+    .name .nickname {
+        font-size: 15px;
+    }
+    .about img {
+        margin: 10%;
+        width: 30%;
+    }
+    
+    .about .detail h1 {
+        font-size: 50px;
+    }
+    
+    .about blockquote {
+        font-size: 20px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and ( max-width: 831px ) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding-top: 2%;
+        width: 70%;
+    }
+    .profile {
+        margin-top: 15%;
+    }
+    .name h1 {
+        font-size: 20px;
+    }
+    
+    .name h2 {
+        font-size: 70px;
+    }
+    
+    .name .nickname {
+        font-size: 15px;
+    }
+
+    .skill .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-bottom: 45%;
+        row-gap: 10%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and ( max-width: 651px ) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding-top: 2%;
+        width: 100%;
+    }
+    .profile {
+        margin-top: 30%;
+    }
+    .name h1 {
+        font-size: 20px;
+    }
+    
+    .name h2 {
+        font-size: 60px;
+    }
+    
+    .name .nickname {
+        font-size: 15px;
+    }
+
+    .about img {
+        margin: 10%;
+        width: 35%;
+    }
+    
+    .about .detail h1 {
+        font-size: 40px;
+    }
+    
+    .about blockquote {
+        font-size: 15px;
+    }
+
+    .skill .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+    }
+    .assignment .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        text-align: center;
+        row-gap: 5%;
+        margin-bottom: 50%;
+    }
+    
+}
+
+@media only screen and ( max-width: 375px ) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul a {
+        font-size: 10px;
+    }
+    
+    .navbar ul {
+        padding-top: 2%;
+        width: 100%;
+    }
+    .profile {
+        margin-top: 30%;
+    }
+    .name h1 {
+        font-size: 10px;
+    }
+    
+    .name h2 {
+        font-size: 30px;
+    }
+    
+    .name .nickname {
+        font-size: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        margin-left: 20%;
+        margin-top: 20%;
+        width: 60%;
+    }
+
+    .about .detail {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    .about .detail h1 {
+        font-size: 40px;
+    }
+    
+    .about blockquote {
+        font-size: 10px;
+    }
+
+    .skill .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 2%;
+    }
+    .assignment .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        text-align: center;
+        row-gap: 5%;
+        margin-bottom: 50%;
+    }
+
+    .assignment .headline h1 {
+        font-size: 35px;
+    }
+
+    .footer {
+        font-size: 5px;
+    }
+    
+}
+/* Portfoilo page */
+
+.project-nav {
+    background-color: wheat;
+    color: saddlebrown;
+    padding: 2%;
+    font-size: 30px;
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+}
+
+.content iframe {
+    width: 100%;
+}
+
+.project1 {
+    text-align: center;
+    padding: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: saddlebrown;
+}
+
+.project2 {
+    text-align: center;
+    padding: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: saddlebrown;
+    background-color: wheat;
+}
+.project3 {
+    text-align: center;
+    padding: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: saddlebrown;
+}
+
+.project4 {
+    text-align: center;
+    padding: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: saddlebrown;
+    background-color: wheat;
+}
+.project5 {
+    text-align: center;
+    padding: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: saddlebrown;
+}
+
+@media only screen and ( max-width: 400px ) {
+    .project-nav {
+        font-size: 15px;
+    }
+}
+
+
+/* project web */
+
+
+
+
+

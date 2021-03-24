@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top_bar
+{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    position: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:3px -2px  rgb(190, 250, 215);
+    color: rgb(94, 240, 155);
+    background-color: rgb(252, 241, 230)
+}
+
+.under_bar 
+{
+    background-color: rgb(253, 247, 241)
+ 
+}
+.under_bar h1
+{
+   padding-top: 100px;
+   padding-left: 20px;
+   color: rgb(94, 240, 155);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-shadow:2px -2px  rgb(190, 250, 215);
+
+}
+.picunder
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; 
+}
+.picunder > div
+{
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.under_bar h2
+{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(94, 240, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:2px -2px  rgb(190, 250, 215);
+}
+.left
+{
+    float: left;
+    padding-left: 30px;
+    width: 50%;
+}
+section
+{
+    display: flex;
+    
+}    
+#manu
+{
+    margin-left: 32%;
+    display: inline;
+    vertical-align: middle;
+    
+}
+ .need
+{
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 20px;
+    color: rgb(83, 204, 133);
+}
+.undernext1
+{
+    background-color: rgb(253, 247, 241)
+}
+.undernext1 h3
+{
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(94, 240, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:2px -2px  rgb(190, 250, 215);
+}
+.undernext1 ol
+{
+    padding-top: 30px;
+    padding-left: 70px;
+}
+.undernext1 ol li
+{
+    font-size: 20px;
+    color: rgb(83, 204, 133);
+}
+.undernext2
+{
+    background-color: rgb(253, 247, 241)
+}
+.undernext2 h4
+{
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(94, 240, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:2px -2px  rgb(190, 250, 215);
+}
+.text1
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+    font-size: 20px;
+    color: rgb(83, 204, 133);
+}
+.undernext2 h5
+{
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(94, 240, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:2px -2px  rgb(190, 250, 215);
+}
+a
+{
+    
+    font-size: 20px;
+    color:rgb(94, 240, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}

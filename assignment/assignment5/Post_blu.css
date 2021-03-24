@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background
+{
+    height: 753px;
+    width: 100%;
+    background-color: hsl(30, 95%, 85%);
+    text-align: center;
+}
+.phonecake
+{
+    margin-left: 40px;
+    width: 80%;
+}
+.background .Chat
+{
+    margin-top : -180px;
+}
